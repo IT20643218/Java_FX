@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.StudentFormController">
+   <children>
+      <Label contentDisplay="CENTER" layoutX="208.0" layoutY="24.0" text="Customer Form" textAlignment="CENTER">
+         <font>
+            <Font name="Times New Roman Bold" size="27.0" />
+         </font>
+      </Label>
+      <Button layoutX="48.0" layoutY="84.0" mnemonicParsing="false" onAction="#btnSalonHisaCareOnAction" prefHeight="39.0" prefWidth="128.0" style="-fx-background-color: rgb(41, 128, 185);" text="Salon Hisa Care" textFill="#fff6f6">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TextField fx:id="TxtExampletest" layoutX="48.0" layoutY="168.0" prefHeight="39.0" prefWidth="355.0" promptText="Type Customer Name" />
+      <Button fx:id="btnSubmit" layoutX="351.0" layoutY="241.0" mnemonicParsing="false" onAction="#btnSubmitOnAction" style="-fx-background-color: blue;" text="Submit" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TextField fx:id="lblBanner" layoutX="48.0" layoutY="289.0" prefHeight="25.0" prefWidth="267.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </TextField>
+      <Button layoutX="11.0" layoutY="362.0" mnemonicParsing="false" onAction="#btnHideOnAction" prefHeight="30.0" prefWidth="74.0" style="-fx-background-color: rgb(52, 152, 219);" text="Hide" textFill="#f8f5f5">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="451.0" layoutY="362.0" mnemonicParsing="false" onAction="#btnShowOnAction" prefHeight="30.0" prefWidth="74.0" style="-fx-background-color: rgb(52, 152, 219);" text="Show" textFill="#f8f5f5">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fitHeight="124.0" fitWidth="140.0" layoutX="463.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/1.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="540.0" layoutY="366.0" mnemonicParsing="false" onAction="#btnHomeOnAction" style="-fx-background-color: rgb(154, 236, 219);" text="Home" textFill="#070000">
+         <font>
+            <Font name="Times New Roman" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>
